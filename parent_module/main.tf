@@ -7,7 +7,7 @@ module "rg_module" {
  module "stg_module" {
     depends_on = [ module.rg_module ]
     source = "../chaild_module/storage_account"
-    stg_name = day3stgaccount
+    stg_name = "day3stgaccount"
     rg_name = "day3_rg"
     location = "centralindia"
 
